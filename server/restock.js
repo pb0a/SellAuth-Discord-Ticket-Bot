@@ -30,7 +30,7 @@ async function sendRestockEmbed(product, variant) {
       content: `<@&${RESTOCK_ROLE_ID}>`,
       embeds: [{
         title: `${product.name} Restocked`,
-        url: `https://${SELLAUTH_DOMAIN}/products/${product.path}`,
+        url: `https://${SELLAUTH_DOMAIN}/product/${product.path}`,
         color: 0xFFFFFF,
         fields: [
           { name: 'Restocked', value: variant.name, inline: false },
